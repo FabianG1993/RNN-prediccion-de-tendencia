@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #CCCCFF;
+    padding: 20px; /* Agrega un margen general alrededor del contenido */
+}
+
+h1 {
+    color: #333;
+    margin-top: 20px;
+}
+
+form {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    display: inline-block;
+    width: 30%; /* Establece un ancho fijo para el formulario */
+    vertical-align: top; /* Alinea el formulario en la parte superior */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}
+
+.input-container {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    background-color: #f0f0f0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #008000;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    display: block; /* Hace que el botón sea un bloque independiente */
+    margin-top: 15px; /* Agrega espacio superior entre el formulario y el botón */
+}
+
+button:hover {
+    background-color: #005b44;
+}
+
+img {
+    max-width: 100%; /* Evita que la imagen se desborde del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}

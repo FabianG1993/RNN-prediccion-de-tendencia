@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicción de tendencia</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1 style="margin-top: 30px;">Predicción de tendencia</h1>
+    <form method="POST">
+        <div class="input-container">
+            <label for="ticker">Ticker:</label>
+            <input type="text" name="ticker" required>
+        </div>
+
+        <div class="input-container">
+            <label for="start_date">Fecha Inicial:</label>
+            <input type="date" name="start_date" required>
+        </div>
+
+        <div class="input-container">
+            <label for="end_date">Fecha Final:</label>
+            <input type="date" name="end_date" required>
+        </div>
+
+        <div class="input-container">
+            <label for="days_to_predict">Rango de predicción (días):</label>
+            <input type="number" name="days_to_predict" required>
+        </div>
+
+        <button type="submit">Realizar Predicción</button>
+   
+    </form>
+
+    <img id="plot-image" src="data:image/png;base64, {{ plot_data }}">
+
+</body>
+</html>
